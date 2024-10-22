@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base{
+    *{
+      /* scrollbar-width: none; */
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+  }
+
+  /* .menu{
+    color: red;
+  } */
+
+.code1{
+  clip-path: polygon(100% 0%, 51% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
+}
+.code2{
+  clip-path: polygon(60% 0, 100% 0, 40% 100%, 0 100%);
+}
+.code3{
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 49% 52%, 0% 0%);
+}
+
+.logo:hover .code2{
+  clip-path: none;
+display: none;
+}
+
+
+.svg text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  stroke-width: 3px;
+  fill: transparent;
+  letter-spacing: 5px;
+  animation: stroke 5s infinite alternate ;
+}
+
+@keyframes stroke{
+  from{
+    stroke-dasharray: 0 100%;
+  }
+  to{
+    stroke-dasharray: 5% 0;
+    stroke-dashoffset: 0;
+  }
+  30%{
+    stroke: #d5dc02;
+    text-shadow: 2px 3px 10px #d5dc02;
+  }
+  65%{
+    stroke: #dc8102;
+    text-shadow: 2px 3px 10px #dc8102;
+  }
+  100%{
+    stroke: #dc2f02;
+    text-shadow: 2px 3px 10px #dc2f02;
+  }
+}
+
+.clipPath{
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transform: rotate(90deg);
+  margin-right: -20px;
+}
+.clip{
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /* transform: rotate(90deg); */
+}
+
+.bayang:hover{
+  margin-left: 15px;
+  box-shadow: 0 0 10px #dc2f02;
+}
+
+/* ============================================================================================== */
+
+.iconRotate i{
+transform: rotate(-45deg);
+}
+
+/* ====================================================================================== */
+.line{
+  animation: line 7s linear infinite;
+}
+
+@keyframes line{
+  20%{
+    box-shadow: 5px 5px 0 orangered;
+  }
+  40%{
+    box-shadow: -5px -5px 0 orangered;
+  }
+  60%{
+    box-shadow: -5px 5px 0 orangered;
+  }
+  80%{
+    box-shadow: 5px -5px 0 0 orangered;
+  }
+  100%{
+    box-shadow: 0 0 0 orangered;
+  }
+}
+
+/* ========================================================================================= */
+.garis{
+  animation: line 7s linear infinite;
+}
+
+@keyframes line{
+  20%{
+    box-shadow: 10px 10px 0 orangered;
+  }
+  40%{
+    box-shadow: -10px -10px 0 orangered;
+  }
+  60%{
+    box-shadow: -10px 10px 0 orangered;
+  }
+  80%{
+    box-shadow: 10px -10px 0 0 orangered;
+  }
+  100%{
+    box-shadow: 0 0 0 orangered;
+  }
+}
+
+.pisah{
+  background: linear-gradient(to right,orangered 50%, rgb(0, 0, 0) 50%);
+}
+
+.tag i{
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scroll Bar */
+.scrol{
+  scrollbar-width: none;
+}
+/* .scrol::-webkit-scrollbar{
+  width: 12px;
+  height: 100%;
+}
+.scrol::-webkit-scrollbar-thumb{
+  background-color: #dc8102;
+  border-radius: 10px;
+}
+.scrol::-webkit-scrollbar-track{
+  background-color: #fff;
+} */
+
